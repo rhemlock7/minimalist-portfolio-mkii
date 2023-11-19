@@ -3,7 +3,43 @@
 @tailwind utilities;
 
 :root {
+    --dark: black;
+    --light: white;
+}
 
+* {
+    font-family: neue-haas-grotesk-display, neue-haas-unica, sans-serif;
+    font-size: 17px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.25em;
+}
+
+h4 {
+    font-size: 1.75em;
+}
+
+h5 {
+    font-family: neue-haas-unica, sans-serif;
+    font-size: 1.25em;
+}
+
+p {
+    font-family: neue-haas-unica, sans-serif;
+    line-height: 22px;
+    font-weight: 300;
 }
 
 body {
