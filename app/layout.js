@@ -16,15 +16,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link rel="stylesheet" href="https://use.typekit.net/vcu5wsc.css" />
       
-      {/* Navigation */}
-      <Navigation />
+      <body className={inter.className}>
 
-      {/* Body */}
-      <body className={inter.className}>{children}</body>
 
-      {/* Footer */}
-      <Footer />
+
+        {/* Navigation */}
+        <Navigation />
+
+        {/* Body */}
+        {children}
+        
+        {/* Footer */}
+        <Footer />
+
+
+
+        </body>
+
+      
 
     </html>
   )

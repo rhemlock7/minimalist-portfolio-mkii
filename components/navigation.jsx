@@ -3,8 +3,8 @@ import React from 'react'
 
 function Navigation() {
   return (
-    <header>
-      <h2>Ryan Hemlock</h2>
+    <header className=''>
+      <h2 className='text-lg'>Ryan Hemlock</h2>
 
       <nav>
         

@@ -2,7 +2,7 @@
 export default function Home() {
   return (
     <section>
-      <p>This is the home page</p>
+      <h1>Software Developer</h1>
     </section>
   )
 }
