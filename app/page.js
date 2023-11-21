@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Ryan from '../public/ryan-hemlock-headshot.jpg';
+import Project from "@/components/project.component";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className='flex flex-col-reverse'>
+      <section className='flex flex-col-reverse border-b-2 pb-8 mb-0'>
         <div className='my-3'>
           <h5>Experience</h5>
           <ul>
@@ -28,7 +29,15 @@ export default function Home() {
       </section>
 
       {/* Projects */}
+      <section>
+        <h2>Projects</h2>
 
+        <div>
+          <Project />
+          <Project />
+          <Project />
+        </div>
+      </section>
       
     </div>
   )
