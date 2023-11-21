@@ -5,11 +5,11 @@ import { useState } from 'react';
 
 function Navigation() {
   return (
-    <header className=''>
+    <header className='h-16 flex items-center justify-between'>
       <h2 className='text-lg'>Ryan Hemlock</h2>
 
       <nav>
-        
+        <p>something</p>
       </nav>
     </header>
   )
