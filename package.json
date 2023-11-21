@@ -6,12 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "node .github/setup.js"
   },
   "dependencies": {
+    "babel-plugin-macros": "^3.1.0",
+    "dotenv": "^16.3.1",
+    "hamburger-react": "^2.5.0",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-markdown": "^9.0.1",
+    "react-spring": "^9.7.3",
     "sass": "^1.69.5"
   },
   "devDependencies": {
