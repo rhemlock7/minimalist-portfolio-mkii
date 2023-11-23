@@ -9,7 +9,7 @@ const Project = () => {
         <Image src={CoolGuyRy} alt="cool ryan photo" />
 
         <div className='flex justify-between items-center'>
-          <h5>Project</h5>
+          <h3>Project</h3>
           <p>Project</p>
         </div>
       </div>
