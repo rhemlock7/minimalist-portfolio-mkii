@@ -20,17 +20,12 @@ function Navigation() {
       
       <nav className='flex flex-col items-end justify-end'>
         <Hamburger toggled={open} toggle={setOpen} onClick={handleChange} />
-
       {/* If "open" is false, open menu */}
-      <div>
         {open && <ul className='text-right'>
             <li><a href="#">About</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Blog</a></li>
           </ul>}
-
-      </div>
-        
       </nav>
     </header>
   )

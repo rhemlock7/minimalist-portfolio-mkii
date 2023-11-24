@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+// ------ Variables ------- //
 :root {
     --dark: black;
     --light: white;
 }
 
+// ------ Base Styling ------- //
 * {
     font-family: neue-haas-unica, sans-serif;
     font-size: 18px;
@@ -57,12 +59,16 @@ section {
     margin: 50px 0;
 }
 
+// ------ Navigation ------- //
 #logo {
     font-family: neue-haas-grotesk-display, sans-serif;
     font-size: 1.5em;
     margin: 0;
 }
 
+
+
+// ------ Hero Section ------- //
 #hero-headshot {
     object-fit: cover;
     object-position: 80% 18%;
@@ -70,6 +76,8 @@ section {
     height: 265px;
 }
 
+
+// ------ Phone Media Queries ------- //
 @media screen and (max-width: 378px) {
     h1 {
         font-size: 3.5em;
