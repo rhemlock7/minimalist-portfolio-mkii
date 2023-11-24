@@ -9,7 +9,7 @@
 
 * {
     font-family: neue-haas-unica, sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.5em;
     margin: 0;
@@ -23,22 +23,19 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 1.8em;
     margin-bottom: 15px;
 }
 
-h3 {
-    font-size: 1.5em;
+h3, a {
+    font-size: 1.2em;
 }
 
 p, li {
     font-family: neue-haas-unica, sans-serif;
-    line-height: 22px;
+    line-height: 25px;
 }
 
-a {
-    font-size: 22px;
-}
 
 button {
     border: 1px solid rgb(124, 124, 124);
@@ -60,14 +57,17 @@ section {
     margin: 50px 0;
 }
 
-#project-title {
-    font-family: neue-haas-grotesk-display, sans-serif;
-    margin-bottom: -12px;
-}
-
 #logo {
     font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 1.5em;
     margin: 0;
+}
+
+#hero-headshot {
+    object-fit: cover;
+    object-position: 80% 18%;
+    width: 250px;
+    height: 265px;
 }
 
 @media screen and (max-width: 378px) {

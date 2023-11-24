@@ -1,13 +1,13 @@
 import Image from "next/image";
-import Ryan from '../public/ryan-hemlock-headshot.jpg';
+import Ryan from '../public/assets/ryan-photos/23-RH-PORTRAIT-EDIT-293 - CROPPED.jpg';
 import Project from "@/components/project.component";
 
 export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className='flex flex-col justify-between items-start border-b-2 py-12 mb-0 lg:flex-row lg:items-end lg:pt-28 lg:pb-16 '>
-        <Image src={Ryan} alt='ryan hemlock headshot' width={200} height={200}></Image>
+      <section className='flex flex-col justify-between items-start border-b-2 py-12 mb-0 lg:flex-row lg:items-end lg:pt-28 lg:pb-12 '>
+        <Image src={Ryan} alt='ryan hemlock headshot' width={250} id="hero-headshot"></Image>
         <h1 className='mt-6'>Software Developer</h1>
       </section>
 
@@ -19,11 +19,9 @@ export default function Home() {
           <h2>Experience</h2>
           <ul>
             <li>
-              <h3>The Bema Team</h3>
-              <p>Worked here forever my dude!</p>
+              <p className='text-lg'>The Bema Team - Owner</p>
+              <p className='text-sm'>March 2021 - Present</p>
             </li>
-            <li>Item</li>
-            <li>Item</li>
           </ul>
         </div>
 
@@ -37,7 +35,7 @@ export default function Home() {
 
       {/* Projects */}
       <section>
-        <h2 className='mb-0' id="project-title">Recent Projects</h2>
+        <h2 className='-mb-5'>Recent Projects</h2>
 
         <div className='lg:grid lg:grid-cols-2 gap-x-8 gap-y-0'>
           <Project />
