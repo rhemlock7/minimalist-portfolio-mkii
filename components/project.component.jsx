@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import CoolGuyRy from '../public/23-RH-PORTRAIT-EDIT-421 (2).jpg'
+import CoolGuyRy from '../public/assets/ryan-photos/23-RH-PORTRAIT-EDIT-421 (2).jpg'
 
 const Project = () => {
   return (
