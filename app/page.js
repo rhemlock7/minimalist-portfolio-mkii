@@ -6,13 +6,13 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className='flex flex-col justify-between items-start border-b-2 py-12 mb-0 lg:flex-row lg:items-end lg:pt-28 lg:pb-12 '>
+      <section className='flex flex-col justify-between items-start border-b-2 py-12 mb-0 lg:flex-row lg:items-end lg:pt-28 lg:pb-12 2xl:pt-40 2xl:pb-16'>
         <Image src={Ryan} alt='ryan hemlock headshot' width={250} id="hero-headshot"></Image>
         <h1 className='mt-6'>Software Developer</h1>
       </section>
 
       {/* About Section */}
-      <section className='flex flex-col-reverse border-b-2 py-8 pb-14 lg:flex-row lg:items-start lg:pb-20'>
+      <section className='flex flex-col-reverse border-b-2 py-8 pb-14 lg:flex-row lg:items-start lg:pb-20 2xl:pb-28 2xl:pt-20 '>
 
         {/* Experience Div */}
         <div className='my-3 mt-10 lg:w-1/2 lg:m-0'>
