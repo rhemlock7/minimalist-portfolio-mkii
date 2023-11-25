@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <section className='flex flex-col justify-between items-start border-b-2 py-12 mb-0 lg:flex-row lg:items-end lg:pt-28 lg:pb-12 2xl:pt-40 2xl:pb-16'>
-        <Image src={Ryan} alt='ryan hemlock headshot' width={250} id="hero-headshot"></Image>
+        <Image src={Ryan} alt='ryan hemlock headshot' id="hero-headshot"></Image>
         <h1 className='mt-6'>Software Developer</h1>
       </section>
 
