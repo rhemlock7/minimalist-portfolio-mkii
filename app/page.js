@@ -18,9 +18,13 @@ export default function Home() {
         <div className='my-3 mt-10 lg:w-1/2 lg:m-0'>
           <h2>Experience</h2>
           <ul>
-            <li>
-              <p className='text-lg'>The Bema Team - Owner</p>
-              <p className='text-sm'>March 2021 - Present</p>
+            <li className='my-3'>
+              <p className='text-base'>The Bema Team - Owner</p>
+              <p className='text-sm text-slate-500'>March 2021 - Present</p>
+            </li>
+            <li className='my-3'>
+              <p className='text-base'>Alcove Media - Photographer</p>
+              <p className='text-sm text-slate-500'>January 2020 - February 2021</p>
             </li>
           </ul>
         </div>
@@ -38,8 +42,6 @@ export default function Home() {
         <h2 className='-mb-5'>Recent Projects</h2>
 
         <div className='lg:grid lg:grid-cols-2 gap-x-8 gap-y-0'>
-          <Project />
-          <Project />
           <Project />
           <Project />
           <Project />

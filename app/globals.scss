@@ -19,6 +19,10 @@
     box-sizing: border-box;
 }
 
+body, html {
+    background-color: var(--light);
+}
+
 h1 {
     font-family: neue-haas-grotesk-display, sans-serif;
     font-size: 4.5em;
