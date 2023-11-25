@@ -16,12 +16,12 @@ function Navigation() {
 
 // Menu component with conditional rendering
 let menu;
-let menuMask;
+// let menuMask;
 
 if (open) {
   menu = 
-  <div className='nav-menu-container z-40'>
-    
+  <div className='nav-menu-container'>
+
     {/* About Link */}
     <ul className='nav-menu'>
       <li>
@@ -55,30 +55,27 @@ if (open) {
     </ul>
   </div>
 
-  menuMask = 
-  <div className='bg-white fixed top-0 h-full w-full z-40'>
-
-  </div>
+  // menuMask = 
+  // <div className='bg-white fixed top-0 h-full w-full -z-10' onClick={() => setOpen(false)}>
+    
+  // </div>
 }
 
 
 
   // Navgiation Component
   return (
-    <header className='sticky top-0'>
-      <nav className='h-16 flex items-center justify-between lg:pt-6 z-50'>
+    <header className=''>
+      <nav className='h-16 flex items-center justify-between lg:pt-6'>
         <div className='logo-wrapper'>
           <h2 className='text-lg' id='logo'>Ryan Hemlock</h2>
         </div>
-
         {/* <p>Dark mode?</p> */}
-        
         <Hamburger toggled={open} toggle={setOpen} onClick={handleChange} id='hamburger-icon'/>
-        
       </nav>
 
       {/* If "open" is false, open menu */}
-      { menuMask }
+      {/* { menuMask } */}
       { menu }
 
     </header>
