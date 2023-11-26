@@ -50,7 +50,7 @@ export default function Home() {
       <section>
         <h2>Recent Projects</h2>
 
-        <div className='lg:grid lg:grid-cols-2 gap-x-8 gap-y-5'>
+        <div className='grid lg:grid-cols-2 gap-x-8 gap-y-4'>
           <Project />
           <Project />
           <Project />
