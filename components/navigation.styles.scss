@@ -3,25 +3,26 @@
     --font: white;
 }
 
-
 .nav-menu-container {
     background-color: var(--background);
     color: var(--font);
     margin: 0 auto;
-    height: 82%;
-    width: 98%;
-    top: 5.5em;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
     right: 0;
     left: 0;
     position: fixed;
-    border-radius: 24px;
 
     .nav-menu {
         max-width: 1440px;
         width: 90%;
-        margin: 0 auto;
         position: absolute;
         top: 20%;
+        left: 5%;
+        z-index: 20;
+        overflow-y: hidden;
         
 
         li {
@@ -35,5 +36,9 @@
                 align-items: center;
             }
         }
+
     }
+}
+#final-li-border {
+    border-bottom: 1px solid rgb(73, 73, 73);
 }
