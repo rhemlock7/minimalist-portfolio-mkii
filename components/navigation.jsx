@@ -19,8 +19,8 @@ function Navigation() {
 
   //Nav-Menu Animation
   const transition = useSpring({
-    opacity: open ? 1 : 0,
-    transform: open ? 'translateX(0%)' : 'translateX(-100%)'
+    // opacity: open ? 1 : 0,
+    transform: open ? 'translateY(0%)' : 'translateY(100%)'
     
     // from: { opacity: 0, transform: 'translateX(-100%)' },
     // enter: { opacity: 1, transform: 'translateX(0%)' },
