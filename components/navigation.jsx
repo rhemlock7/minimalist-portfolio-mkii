@@ -45,7 +45,7 @@ function Navigation() {
       {/* MOBILE MENU that displays when toggled */}
         <animated.div style={transition} className='nav-menu-container'>
 
-          <div className='absolute right-4 md:right-14 top-8'>
+          <div id='hamburger-container'>
             <Hamburger toggled={open} toggle={setOpen} onClick={handleChange} id='hamburger-icon' />
           </div>
 
