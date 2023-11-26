@@ -8,7 +8,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className='flex flex-col justify-between items-start border-b-2 py-12 mb-0 lg:flex-row lg:items-end lg:pt-28 lg:pb-12 2xl:pt-40 2xl:pb-16'>
         <Image src={Ryan} alt='ryan hemlock headshot' id="hero-headshot"></Image>
-        <h1 className='mt-6'>Software Developer</h1>
+        <h1 className='mt-6'>I'm Ryan 👋<br></br>Software Developer</h1>
       </section>
 
       {/* About Section */}
@@ -27,12 +27,21 @@ export default function Home() {
               <p className='text-sm text-slate-500'>January 2020 - February 2021</p>
             </li>
           </ul>
+          <h2 className='mt-8'>Notable Skills</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Next.js</li>
+          </ul>
         </div>
 
         {/* About Bio Div */}
         <div className='mb-3 -mt-3 lg:w-3/5 lg:m-0'>
           <h2>About</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p>Hey! My name is Ryan Hemlock. I'm a full-stack software developer specializing in JavaScript & the MERN stack.</p><br></br>
+          <p>I'm also proficient in Next.js, Node.js, Express.js, GraphQL, HTML5, CSS3, MongoDB, Git plus many other technologies and tools.</p><br></br>
+          <p>Click below to view my resume 👇</p>
           <button>Download Resume</button>
         </div>
       </section>
