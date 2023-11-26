@@ -1,13 +1,8 @@
 //imports
 import React from 'react'
 import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-
 //images
 import CoolGuyRy from '../public/assets/ryan-photos/23-RH-PORTRAIT-EDIT-421 (2).jpg'
-//CSS Stylesheet
-import './project.styles.scss';
 
 const Project = () => {
   return (
