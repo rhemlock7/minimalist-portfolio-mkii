@@ -19,9 +19,6 @@ export default function RootLayout({ children }) {
       <link rel="stylesheet" href="https://use.typekit.net/vcu5wsc.css" />
       
       <body className={inter.className}>
-
-
-
         {/* Navigation */}
         <Navigation />
 
@@ -31,11 +28,7 @@ export default function RootLayout({ children }) {
         {/* Footer */}
         <Footer />
 
-
-
-        </body>
-
-      
+      </body>
 
     </html>
   )
