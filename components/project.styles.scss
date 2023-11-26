@@ -1,0 +1,11 @@
+.project-container:hover {
+
+    #view {
+        transform: translateX(-100%);
+    }
+    
+}
+
+#view {
+    transition: all 0.5s ease;
+}

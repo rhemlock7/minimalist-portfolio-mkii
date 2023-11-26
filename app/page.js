@@ -48,9 +48,9 @@ export default function Home() {
 
       {/* Projects */}
       <section>
-        <h2 className='-mb-5'>Recent Projects</h2>
+        <h2>Recent Projects</h2>
 
-        <div className='lg:grid lg:grid-cols-2 gap-x-8 gap-y-0'>
+        <div className='lg:grid lg:grid-cols-2 gap-x-8 gap-y-5'>
           <Project />
           <Project />
           <Project />
