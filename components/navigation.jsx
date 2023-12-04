@@ -34,9 +34,9 @@ function Navigation() {
 
       {/* PRIMARY NAVIGATION */}
       <nav className='h-16 flex items-center justify-between pt-12'>
-        <div className='logo-wrapper'>
+        <Link href="/" className='logo-wrapper'>
           <h2 className='text-lg' id='logo'>Ryan Hemlock</h2>
-        </div>
+        </Link>
         {/* <p>Dark mode?</p> */}
         <Hamburger toggled={open} toggle={setOpen} onClick={handleChange} id='hamburger-icon' />
       </nav>
@@ -52,32 +52,44 @@ function Navigation() {
           {/* About Link */}
           <ul className='nav-menu'>
             <li>
-              <a href="#">
+              <Link href="/" onClick={handleChange}>
+                <div className='li-container'>
+                  <h3>Home</h3>
+                  <Image width={100} alt='ryan hemlock portrait' className='hidden sm:block rounded-md' />
+                </div>
+              </Link>
+            </li>
+          </ul>
+          
+          {/* About Link */}
+          <ul className='nav-menu'>
+            <li>
+              <Link href="/about" onClick={handleChange}>
                 <div className='li-container'>
                   <h3>About</h3>
                   <Image src={RyanPhoto} width={100} alt='ryan hemlock portrait' className='hidden sm:block rounded-md' />
                 </div>
-              </a>
+              </Link>
             </li>
 
             {/* Portfolio Link */}
             <li>
-              <a href="#">
+              <Link href="/portfolio" onClick={handleChange}>
                 <div className='li-container'>
                   <h3>Portfolio</h3>
                   <Image alt='project photo' className='hidden sm:block' />
                 </div>
-              </a>
+              </Link>
             </li>
 
             {/* Blog Link */}
             <li id='final-li-border'>
-              <a href="#">
+              <Link href="/blog" onClick={handleChange}>
                 <div className='li-container'>
                   <h3>Blog</h3>
                   <Image alt='blog photo' className='hidden sm:block' />
                 </div>
-              </a>
+              </Link>
             </li>
           </ul>
       </animated.div>

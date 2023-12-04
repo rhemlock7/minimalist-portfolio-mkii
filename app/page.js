@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Ryan from '../public/assets/ryan-photos/23-RH-PORTRAIT-EDIT-293 - CROPPED.jpg';
 import Project from "@/components/project.component";
+import Article from "@/components/article";
 
 export default function Home() {
   return (
@@ -47,7 +48,7 @@ export default function Home() {
       </section>
 
       {/* Projects */}
-      <section>
+      <section className='py-6'>
         <h2>Recent Projects</h2>
 
         <div className='grid lg:grid-cols-2 gap-x-8 gap-y-4'>
@@ -55,6 +56,17 @@ export default function Home() {
           <Project />
           <Project />
           <Project />
+        </div>
+      </section>
+
+      {/* Blog Section -> Recent Articles */}
+      <section className='border-t-2 py-14'>
+        <h2>Blog</h2>
+
+        <div className='grid md:grid-cols-3 gap-6'>
+          <Article />
+          <Article />
+          <Article />
         </div>
       </section>
       

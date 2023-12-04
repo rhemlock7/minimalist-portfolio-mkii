@@ -34,6 +34,11 @@ h3, a {
     font-size: 1.2em;
 }
 
+h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
 p, li {
     font-family: neue-haas-unica, sans-serif;
     line-height: 25px;
@@ -85,7 +90,7 @@ section {
 // ------ Footer ------- //
 .footer-link {
     margin-right: 25px;
-    transition: all 300ms ease;
+    transition: all 200ms ease;
 }
 
 .footer-link:hover {
