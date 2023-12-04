@@ -21,11 +21,11 @@ function Navigation() {
   const transition = useSpring({
     // opacity: open ? 1 : 0,
     transform: open ? 'translateY(0%)' : 'translateY(100%)'
-    
+
     // from: { opacity: 0, transform: 'translateX(-100%)' },
     // enter: { opacity: 1, transform: 'translateX(0%)' },
     // leave: { opacity: 0, transform: 'translateX(-100%)' },
-});
+  });
 
 
   // Navgiation Component
@@ -43,55 +43,54 @@ function Navigation() {
 
       {/* -------------------------------------- */}
       {/* MOBILE MENU that displays when toggled */}
-        <animated.div style={transition} className='nav-menu-container'>
+      <animated.div style={transition} className='nav-menu-container'>
 
-          <div id='hamburger-container'>
-            <Hamburger toggled={open} toggle={setOpen} onClick={handleChange} id='hamburger-icon' />
-          </div>
+        <div id='hamburger-container'>
+          <Hamburger toggled={open} toggle={setOpen} onClick={handleChange} id='hamburger-icon' />
+        </div>
+
+
+        {/* Home Link */}
+        <ul className='nav-menu'>
+          <li>
+            <Link href="/" onClick={handleChange}>
+              <div className='li-container'>
+                <h3>Home</h3>
+                <Image width={80} alt='hemlock' className='hidden sm:block rounded-md' />
+              </div>
+            </Link>
+          </li>
 
           {/* About Link */}
-          <ul className='nav-menu'>
-            <li>
-              <Link href="/" onClick={handleChange}>
-                <div className='li-container'>
-                  <h3>Home</h3>
-                  <Image width={100} alt='ryan hemlock portrait' className='hidden sm:block rounded-md' />
-                </div>
-              </Link>
-            </li>
-          </ul>
-          
-          {/* About Link */}
-          <ul className='nav-menu'>
-            <li>
-              <Link href="/about" onClick={handleChange}>
-                <div className='li-container'>
-                  <h3>About</h3>
-                  <Image src={RyanPhoto} width={100} alt='ryan hemlock portrait' className='hidden sm:block rounded-md' />
-                </div>
-              </Link>
-            </li>
+          <li>
+            <Link href="/about" onClick={handleChange}>
+              <div className='li-container'>
+                <h3>About</h3>
+                <Image src={RyanPhoto} width={80} alt='ryan hemlock portrait' className='hidden sm:block rounded-md' />
+              </div>
+            </Link>
+          </li>
 
-            {/* Portfolio Link */}
-            <li>
-              <Link href="/portfolio" onClick={handleChange}>
-                <div className='li-container'>
-                  <h3>Portfolio</h3>
-                  <Image alt='project photo' className='hidden sm:block' />
-                </div>
-              </Link>
-            </li>
+          {/* Portfolio Link */}
+          <li>
+            <Link href="/portfolio" onClick={handleChange}>
+              <div className='li-container'>
+                <h3>Portfolio</h3>
+                <Image alt='project photo' className='hidden sm:block' />
+              </div>
+            </Link>
+          </li>
 
-            {/* Blog Link */}
-            <li id='final-li-border'>
-              <Link href="/blog" onClick={handleChange}>
-                <div className='li-container'>
-                  <h3>Blog</h3>
-                  <Image alt='blog photo' className='hidden sm:block' />
-                </div>
-              </Link>
-            </li>
-          </ul>
+          {/* Blog Link */}
+          <li id='final-li-border'>
+            <Link href="/blog" onClick={handleChange}>
+              <div className='li-container'>
+                <h3>Blog</h3>
+                <Image alt='blog photo' className='hidden sm:block' />
+              </div>
+            </Link>
+          </li>
+        </ul>
       </animated.div>
 
     </header>
