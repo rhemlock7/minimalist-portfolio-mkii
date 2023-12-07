@@ -6,6 +6,7 @@ import { useSpring, animated } from '@react-spring/web';
 import Hamburger from 'hamburger-react';
 import RyanPhoto from '../public/assets/ryan-photos/ryan-hemlock-headshot.jpg';
 import './navigation.styles.scss';
+import DarkModeToggle from './darkModeToggle/darkModeToggle';
 
 function Navigation() {
   // Usestate for hamburger menu
@@ -37,12 +38,19 @@ function Navigation() {
         <Link href="/" className='logo-wrapper'>
           <h2 className='text-lg' id='logo'>Ryan Hemlock</h2>
         </Link>
-        {/* <p>Dark mode?</p> */}
+
+
+        {/* Dark mode Toggle */}
+        <DarkModeToggle />
+
+
+        {/* Hamburger Menu */}
         <Hamburger toggled={open} toggle={setOpen} onClick={handleChange} id='hamburger-icon' />
       </nav>
 
+
       {/* -------------------------------------- */}
-      {/* MOBILE MENU that displays when toggled */}
+      {/* MENU that displays ONLY when toggled */}
       <animated.div style={transition} className='nav-menu-container'>
 
         <div id='hamburger-container'>
