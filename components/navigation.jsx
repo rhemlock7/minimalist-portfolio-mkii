@@ -1,12 +1,11 @@
 "use client"
 import Link from 'next/link';
-import Image from 'next/image';
+//import Image from 'next/image';
 import { useState } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import Hamburger from 'hamburger-react';
-import RyanPhoto from '../public/assets/ryan-photos/ryan-hemlock-headshot.jpg';
+//import RyanPhoto from '../public/assets/ryan-photos/ryan-hemlock-headshot.jpg';
 import './navigation.styles.scss';
-import DarkModeToggle from './darkModeToggle/darkModeToggle';
 
 function Navigation() {
   // Usestate for hamburger menu
@@ -20,12 +19,7 @@ function Navigation() {
 
   //Nav-Menu Animation
   const transition = useSpring({
-    // opacity: open ? 1 : 0,
     transform: open ? 'translateY(0%)' : 'translateY(100%)'
-
-    // from: { opacity: 0, transform: 'translateX(-100%)' },
-    // enter: { opacity: 1, transform: 'translateX(0%)' },
-    // leave: { opacity: 0, transform: 'translateX(-100%)' },
   });
 
 
@@ -38,11 +32,6 @@ function Navigation() {
         <Link href="/" className='logo-wrapper'>
           <h2 className='text-lg' id='logo'>Ryan Hemlock</h2>
         </Link>
-
-
-        {/* Dark mode Toggle */}
-        <DarkModeToggle />
-
 
         {/* Hamburger Menu */}
         <Hamburger toggled={open} toggle={setOpen} onClick={handleChange} id='hamburger-icon' />
@@ -60,44 +49,45 @@ function Navigation() {
 
         {/* Home Link */}
         <ul className='nav-menu'>
-          <li>
+          <li>Coming Soon!</li>
+          {/* <li>
             <Link href="/" onClick={handleChange}>
               <div className='li-container'>
                 <h3>Home</h3>
                 <Image width={80} alt='hemlock' className='hidden sm:block rounded-md' />
               </div>
             </Link>
-          </li>
+          </li> */}
 
           {/* About Link */}
-          <li>
+          {/* <li>
             <Link href="/about" onClick={handleChange}>
               <div className='li-container'>
                 <h3>About</h3>
                 <Image src={RyanPhoto} width={80} alt='ryan hemlock portrait' className='hidden sm:block rounded-md' />
               </div>
             </Link>
-          </li>
+          </li> */}
 
           {/* Portfolio Link */}
-          <li>
+          {/* <li>
             <Link href="/portfolio" onClick={handleChange}>
               <div className='li-container'>
                 <h3>Portfolio</h3>
                 <Image alt='project photo' className='hidden sm:block' />
               </div>
             </Link>
-          </li>
+          </li> */}
 
           {/* Blog Link */}
-          <li id='final-li-border'>
+          {/* <li id='final-li-border'>
             <Link href="/blog" onClick={handleChange}>
               <div className='li-container'>
                 <h3>Blog</h3>
                 <Image alt='blog photo' className='hidden sm:block' />
               </div>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </animated.div>
 
