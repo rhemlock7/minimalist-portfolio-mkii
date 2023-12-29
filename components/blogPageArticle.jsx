@@ -1,14 +1,9 @@
 import React from 'react'
 
-function BlogPageArticle(props) {
-    const blogName = props.blogName;
-    const readTime = props.readTime;
-    const publishedDate = props.publishedDate;
-    const image = props.image;
-    const altText = props.altText;
+function BlogPageArticle({blogName, readTime, publishedDate, image, altText, id}) {
 
     return (
-        <a className='w-full my-8 flex justify-between items-center' href=''>
+        <a className='w-full my-8 flex justify-between items-center' href={`blog/${id}`}>
             <img src={image} alt={altText} />
             <div className='w-full ml-8'>
                 <h2>{blogName}</h2>
