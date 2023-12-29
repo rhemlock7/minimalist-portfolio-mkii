@@ -1,9 +1,15 @@
 import Image from "next/image";
+// Images
 import Ryan from '../public/assets/ryan-photos/23-RH-PORTRAIT-EDIT-293 - CROPPED.jpg';
+
+// Imported components
 // import Project from "@/components/project.component";
-// import Article from "@/components/article";
+import ArticleContainer from "@/components/ArticleContainer.home";
+
 
 export default function Home() {
+
+  // HTML Being rendered
   return (
     <div>
       {/* Hero Section */}
@@ -13,8 +19,8 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className='flex flex-col-reverse py-8 pb-14 lg:flex-row lg:items-start lg:pb-20 2xl:pb-28 2xl:pt-20 '> 
-      {/* border-b-2 -> when needed */}
+      <section className='flex flex-col-reverse py-8 pb-14 lg:flex-row lg:items-start lg:pb-20 2xl:pb-28 2xl:pt-20 '>
+        {/* border-b-2 -> when needed */}
 
         {/* Experience Div */}
         <div className='my-3 mt-10 lg:w-1/2 lg:m-0'>
@@ -52,16 +58,13 @@ export default function Home() {
       </section> */}
 
       {/* Blog Section -> Recent Articles */}
-      {/* <section className='border-t-2 py-14'>
-        <h2>Blog</h2>
+      <section className='border-t-2 py-14'>
+            {/* Title */}
+            <h2>Blog</h2>
 
-        <div className='grid md:grid-cols-3 gap-6'>
-          <Article />
-          <Article />
-          <Article />
-        </div>
-      </section> */}
-      
+            <ArticleContainer />
+        </section>
+
     </div>
   )
 }

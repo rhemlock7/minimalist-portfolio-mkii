@@ -1,20 +1,24 @@
 import React from 'react'
 
-function Article() {
-  return (
-    <article>
-        <a href=''>
-            <img className='w-full h-60 md:80' src="https://images.pexels.com/photos/17567251/pexels-photo-17567251/free-photo-of-large-guild-in-riga.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+function Article(props) {
+  const blogName = props.blogName;
+  const readTime = props.readTime;
+  const publishedDate = props.publishedDate;
+  const image = props.image;
+  const altText = props.altText;
 
-            <div>
-                <h4>Blog Article</h4>
-                <div className='flex justify-between text-gray-500'>
-                    <p className='text-sm'>Read time: 4 minutes</p>
-                    <p className='text-sm'>Nov. 26, 2023</p>
-                </div>
-            </div>
-        </a>
-    </article>
+  return (
+    <a href=''>
+      <img className='h-52 w-full object-cover rounded-md' src={image} alt={altText} />
+
+      <div>
+        <h4 className='my-2'>{blogName}</h4>
+        <div className='flex justify-between text-gray-500'>
+          <p className='text-sm'>Read time: {readTime} min</p>
+          <p className='text-sm'>{publishedDate}</p>
+        </div>
+      </div>
+    </a>
   )
 }
 
