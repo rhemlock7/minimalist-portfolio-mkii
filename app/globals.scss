@@ -37,6 +37,7 @@ a {
 
 h4 {
     font-size: 1.1em;
+    line-height: 1.1em;
     font-weight: bold;
 }
 
@@ -98,7 +99,6 @@ section {
 .footer-link:hover {
     color: rgb(116, 116, 116);
 }
-
 
 // ------ Phone Media Queries ------- //
 @media screen and (max-width: 540px) {

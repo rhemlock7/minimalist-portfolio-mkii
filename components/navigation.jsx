@@ -1,10 +1,10 @@
 "use client"
 import Link from 'next/link';
-//import Image from 'next/image';
+import Image from 'next/image';
 import { useState } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import Hamburger from 'hamburger-react';
-//import RyanPhoto from '../public/assets/ryan-photos/ryan-hemlock-headshot.jpg';
+import RyanPhoto from '../public/assets/ryan-photos/ryan-hemlock-headshot.jpg';
 import './navigation.styles.scss';
 
 function Navigation() {
@@ -49,15 +49,14 @@ function Navigation() {
 
         {/* Home Link */}
         <ul className='nav-menu'>
-          <li>Coming Soon!</li>
-          {/* <li>
+          <li>
             <Link href="/" onClick={handleChange}>
               <div className='li-container'>
                 <h3>Home</h3>
                 <Image width={80} alt='hemlock' className='hidden sm:block rounded-md' />
               </div>
             </Link>
-          </li> */}
+          </li>
 
           {/* About Link */}
           {/* <li>
@@ -80,14 +79,14 @@ function Navigation() {
           </li> */}
 
           {/* Blog Link */}
-          {/* <li id='final-li-border'>
+          <li id='final-li-border'>
             <Link href="/blog" onClick={handleChange}>
               <div className='li-container'>
                 <h3>Blog</h3>
                 <Image alt='blog photo' className='hidden sm:block' />
               </div>
             </Link>
-          </li> */}
+          </li>
         </ul>
       </animated.div>
 

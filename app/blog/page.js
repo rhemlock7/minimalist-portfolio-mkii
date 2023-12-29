@@ -1,10 +1,15 @@
+import BlogPageArticles from '@/components/blogArticles.blog';
 import React from 'react'
 
 function Blog() {
   return (
     <div>
-      <section>
-        <p>This is the Blog!</p>
+      <section className='mt-24'>
+        <h1>Blog</h1>
+
+        {/* All Articles */}
+        <BlogPageArticles />
+
       </section>
     </div>
   )
