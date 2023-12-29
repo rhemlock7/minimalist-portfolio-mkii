@@ -16,7 +16,7 @@ function BlogPageArticles() {
         // Map through the first three items in the data array and render Article components
         const articles = data.data.map((blog) => {
             const blogData = blog.attributes;
-            const imageUrl = blogData.mainImage.data.attributes.formats.medium.url;
+            const imageUrl = blogData.mainImage.data.attributes.formats.thumbnail.url;
             return (
                 <BlogPageArticle
                     key={blog.id} // Unique key for each component
@@ -29,7 +29,10 @@ function BlogPageArticles() {
             );
         });
 
-        return <div className="mt-12">{articles}</div>;
+        return <div className="mt-12">
+            
+            {articles}
+        </div>;
     }
 }
 

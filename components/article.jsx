@@ -6,9 +6,10 @@ function Article(props) {
   const publishedDate = props.publishedDate;
   const image = props.image;
   const altText = props.altText;
+  const blogID = props.key
 
   return (
-    <a href=''>
+    <a href={`http://localhost:3000/api/blogs/${blogID}?populate=*`}>
       <img className='h-52 w-full object-cover rounded-md' src={image} alt={altText} />
 
       <div>
