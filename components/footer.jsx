@@ -12,15 +12,15 @@ const Footer = () => {
 
         <div className='flex'>
           <Link href="/" className='footer-link'>Home</Link>
-          <Link href="about" className='footer-link'>About</Link>
-          {/* <Link href="/portfolio" className='footer-link'>Portfolio</Link> */}
+          {/* <Link href="about" className='footer-link'>About</Link> */}
+          <Link href="/portfolio" className='footer-link'>Portfolio</Link>
           <Link href="/blog" className='footer-link'>Blog</Link>
         </div>
       </div>
 
-      <div className='py-4'>
-        <h3>Want to work together?</h3>
+      <div className='py-4 flex flex-col items-end'>
         <p>Let’s connect: <span>ryan@ryanhemlock.com</span></p>
+        <p>Site built with Next.js</p>
       </div>
     </footer>
   )
