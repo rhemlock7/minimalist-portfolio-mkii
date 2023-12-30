@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Article from './article';
-import useFetch from "../app/hooks/useFetch";
+import useFetch from "../../app/hooks/useFetch";
 
 function ArticleContainer() {
     // Fetch for Blog API

@@ -69,14 +69,14 @@ function Navigation() {
           </li> */}
 
           {/* Portfolio Link */}
-          {/* <li>
+          <li>
             <Link href="/portfolio" onClick={handleChange}>
               <div className='li-container'>
                 <h3>Portfolio</h3>
                 <Image alt='project photo' className='hidden sm:block' />
               </div>
             </Link>
-          </li> */}
+          </li>
 
           {/* Blog Link */}
           <li id='final-li-border'>

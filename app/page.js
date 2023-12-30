@@ -3,8 +3,9 @@ import Image from "next/image";
 import Ryan from '../public/assets/ryan-photos/23-RH-PORTRAIT-EDIT-293 - CROPPED.jpg';
 
 // Imported components
-// import Project from "@/components/project.component";
-import ArticleContainer from "@/components/ArticleContainer.home";
+import Project from "@/components/portfolio-components/featuredProject.component";
+import ArticleContainer from "@/components/blog-components/ArticleContainer.home";
+import FeaturedProjects from "@/components/portfolio-components/FeaturedProjects";
 
 
 export default function Home() {
@@ -48,22 +49,19 @@ export default function Home() {
       </section>
 
       {/* Projects */}
-      {/* <section className='py-6'>
-        <h2>Recent Projects</h2>
+      <section className='py-6'>
+        <h2>Featured Projects</h2>
 
-        <div className='grid lg:grid-cols-2 gap-x-8 gap-y-4'>
-          <Project title='Project title #1' projectLink='' />
-          <Project title='Project title #2' projectLink='' />
-        </div>
-      </section> */}
+        <FeaturedProjects />
+      </section>
 
       {/* Blog Section -> Recent Articles */}
       <section className='border-t-2 py-14'>
-            {/* Title */}
-            <h2>Blog</h2>
+        {/* Title */}
+        <h2>Recent Articles</h2>
 
-            <ArticleContainer />
-        </section>
+        <ArticleContainer />
+      </section>
 
     </div>
   )

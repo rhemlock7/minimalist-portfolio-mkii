@@ -1,4 +1,4 @@
-import BlogPageArticles from '@/components/blogArticles.blog';
+import BlogPageArticles from '@/components/blog-components/blogArticles.blog';
 import React from 'react'
 
 function Blog() {
