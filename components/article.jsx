@@ -1,15 +1,9 @@
 import React from 'react'
 
-function Article(props) {
-  const blogName = props.blogName;
-  const readTime = props.readTime;
-  const publishedDate = props.publishedDate;
-  const image = props.image;
-  const altText = props.altText;
-  const blogID = props.key
+function Article({blogName, readTime, publishedDate, image, altText, id}) {
 
   return (
-    <a href={`http://localhost:3000/api/blogs/${blogID}?populate=*`}>
+    <a href={`blog/${id}`}>
       <img className='h-52 w-full object-cover rounded-md' src={image} alt={altText} />
 
       <div>

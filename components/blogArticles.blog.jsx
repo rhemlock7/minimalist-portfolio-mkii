@@ -20,6 +20,7 @@ function BlogPageArticles() {
             return (
                 <BlogPageArticle
                     key={blog.id} // Unique key for each component
+                    id={blog.id}
                     blogName={blogData.blogName}
                     readTime={blogData.readTime}
                     publishedDate={blogData.publishedAt}
