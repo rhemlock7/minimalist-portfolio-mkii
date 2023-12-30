@@ -4,7 +4,7 @@ import useFetch from '@/app/hooks/useFetch';
 
 function BlogArticle() {
     // Fetch for Blog API
-    const { loading, error, data } = useFetch('http://localhost:1337/api/blogs?populate=*')
+    const { loading, error, data } = useFetch('https://portfolio-strapi-backend-6r1k.onrender.com/api/blogs?populate=*')
 
     // Loading and error handling
     if (loading) return <p>Loading...</p>
