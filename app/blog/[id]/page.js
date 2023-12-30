@@ -9,7 +9,7 @@ export default function BlogArticle() {
     // Id of the article that was clicked
     const { id } = useParams()
 
-    const { loading, error, data } = useFetch(`http://localhost:1337/api/blogs/${id}?populate=*`)
+    const { loading, error, data } = useFetch(`https://portfolio-strapi-backend-6r1k.onrender.com/api/blogs/${id}?populate=*`)
 
     // Loading and error handling
     if (loading) return <h1 className='my-24'>Loading...</h1>
@@ -19,8 +19,7 @@ export default function BlogArticle() {
     // If data exists, render the data
     if (data) {
         const articleData = data.data.attributes;
-        //console.log(articleData)
-        const image = articleData.mainImage.data.attributes.url
+        const image = articleData.image.data.attributes.url
 
         // Body of the page
         return (
@@ -31,9 +30,9 @@ export default function BlogArticle() {
 
                     {/* Container for image and title info */}
                     <div className='lg:w-2/3'>
-                        <img className='rounded-lg' src={`http://localhost:1337${image}`} alt={articleData.imgAltText} />
+                        <img className='rounded-lg' src={image} alt={articleData.altText} />
 
-                        <h1 className='mt-10'>{articleData.blogName}</h1>
+                        <h1 className='mt-10'>{articleData.title}</h1>
 
                         <div className='flex mt-4 mb-12'>
                             <p className='mr-8'>Published: {articleData.publishedAt}</p>
@@ -41,7 +40,7 @@ export default function BlogArticle() {
                         </div>
 
                         {/* Body text container */}
-                        <ReactMarkdown className='w-10/12'>{articleData.postBody}</ReactMarkdown>
+                        <ReactMarkdown className='w-10/12'>{articleData.body}</ReactMarkdown>
                     </div>
 
                     {/* Side column with author info */}

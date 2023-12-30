@@ -5,7 +5,7 @@ import useFetch from "../app/hooks/useFetch";
 
 function ArticleContainer() {
     // Fetch for Blog API
-    const { loading, error, data } = useFetch('http://localhost:1337/api/blogs?populate=*')
+    const { loading, error, data } = useFetch('https://portfolio-strapi-backend-6r1k.onrender.com/api/blogs?populate=*')
 
     // Loading and error handling
     if (loading) return <p>Loading...</p>
@@ -16,16 +16,16 @@ function ArticleContainer() {
         // Map through the first three items in the data array and render Article components
         const articles = data.data.slice(0, 3).map((blog) => {
             const blogData = blog.attributes;
-            const imageUrl = blogData.mainImage.data.attributes.formats.medium.url;
+            const imageUrl = blogData.image?.data?.attributes?.url;
             return (
                 <Article
                     key={blog.id} // Unique key for each component
                     id={blog.id}
-                    blogName={blogData.blogName}
+                    blogName={blogData.title}
                     readTime={blogData.readTime}
                     publishedDate={blogData.publishedAt}
-                    image={`http://localhost:1337${imageUrl}`}
-                    altText={blogData.imgAltText}
+                    image={imageUrl}
+                    altText={blogData.altText}
                 />
             );
         });
