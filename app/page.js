@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 // Images
 import Ryan from '../public/assets/ryan-photos/23-RH-PORTRAIT-EDIT-293 - CROPPED.jpg';
+import arrowImage from '../public/assets/icons/arrow-icon.svg';
 
 // Imported components
 import Project from "@/components/portfolio-components/featuredProject.component";
@@ -58,7 +60,13 @@ export default function Home() {
       {/* Blog Section -> Recent Articles */}
       <section className='border-t-2 py-14'>
         {/* Title */}
-        <h2>Recent Articles</h2>
+        <div className="flex justify-between items-center">
+          <h2>Recent Articles</h2>
+          <div className='flex'>
+            <Link className='text-lg' href='/blog'>View All</Link>
+            <Image className='w-5 mt-1 ml-2 fill-gray-500' src={arrowImage} />
+          </div>
+        </div>
 
         <ArticleContainer />
       </section>

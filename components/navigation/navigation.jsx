@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import Hamburger from 'hamburger-react';
-import RyanPhoto from '../public/assets/ryan-photos/ryan-hemlock-headshot.jpg';
 import './navigation.styles.scss';
 
 function Navigation() {

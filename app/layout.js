@@ -1,8 +1,8 @@
 // React dependecies
 import { Inter } from 'next/font/google'
 // React Components
-import Navigation from '@/components/navigation'
-import Footer from '@/components/footer'
+import Navigation from '@/components/navigation/navigation'
+import Footer from '@/components/footer/footer'
 // Styling
 import './globals.scss'
 
