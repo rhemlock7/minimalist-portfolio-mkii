@@ -4,6 +4,7 @@ import React from 'react';
 import { useParams } from 'next/navigation';
 import useFetch from '@/app/hooks/useFetch';
 import ReactMarkdown from 'react-markdown';
+import './article.styles.scss';
 
 export default function BlogArticle() {
     // Id of the article that was clicked
@@ -40,7 +41,9 @@ export default function BlogArticle() {
                         </div>
 
                         {/* Body text container */}
-                        <ReactMarkdown className='w-10/12'>{articleData.body}</ReactMarkdown>
+                        <div id='article-container'>
+                            <ReactMarkdown>{articleData.body}</ReactMarkdown>
+                        </div>
                     </div>
 
                     {/* Side column with author info */}
