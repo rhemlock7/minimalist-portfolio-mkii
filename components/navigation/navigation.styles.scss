@@ -26,7 +26,8 @@
 
         li {
             border-top: 1px solid rgb(73, 73, 73);
-            padding: 10px;
+            padding: 40px;
+            padding-bottom: 50px;
             
             .li-container {
                 font-size: 2em;
@@ -53,5 +54,5 @@
     margin: auto;
     padding-top: 2em;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
