@@ -5,6 +5,8 @@ import { useParams } from 'next/navigation';
 import useFetch from '@/app/hooks/useFetch';
 import ReactMarkdown from 'react-markdown';
 import './article.styles.scss';
+import Image from 'next/image';
+import RyanHeadshot from '../../../public/assets/ryan-photos/ryan-hemlock-headshot.jpg'
 
 export default function BlogArticle() {
     // Id of the article that was clicked
@@ -47,8 +49,12 @@ export default function BlogArticle() {
                     </div>
 
                     {/* Side column with author info */}
-                    <div className='hidden md:w-1/4'>
-                        <p>Content Here</p>
+                    <div className='m-auto my-0 mt-12 lg:w-1/4 flex lg:flex-col items-center lg:items-start'>
+                        <Image className='w-48 lg:mb-2' src={RyanHeadshot} />
+                        <div className='ml-5 lg:ml-0'>
+                            <h2>About Me</h2>
+                            <p>Hey! My name is Ryan Hemlock. I've freelanced for years before becoming a web-developer. Today, my goal is to help SAAS companies build the best apps possible.</p>
+                        </div>
                     </div>
                 </section>
 

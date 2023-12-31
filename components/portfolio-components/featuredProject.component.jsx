@@ -9,13 +9,15 @@ const Project = ({ projectName, image, id }) => {
 
         {/* Image */}
         <div className='img-container'>
-          <img className='h-80 w-full object-cover' src={image} alt={projectName} id='project-photo'/>
+          <img className=' w-full object-cover' src={image} alt={projectName} id='project-photo'/>
         </div>
 
         {/* Text */}
-        <div className='flex justify-between items-center mt-1'>
-          <h3 className='text-base'>{projectName}</h3>
-          <a className='text-gray-500 text-base' id='view' href={`portfolio/${id}`} >View</a>          
+        <div className='flex flex-col justify-between items-start mt-1 md:flex-row'>
+          <h3 className=''>{projectName}</h3>
+          <div className='mt-2 md:mt-0'>
+            <a className='text-gray-500 text-base' id='view' href={`portfolio/${id}`} >View</a>          
+          </div>
         </div>
 
       </div>
