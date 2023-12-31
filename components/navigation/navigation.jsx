@@ -52,7 +52,7 @@ function Navigation() {
             <Link href="/" onClick={handleChange}>
               <div className='li-container'>
                 <h3>Home</h3>
-                <Image width={80} alt='hemlock' className='hidden sm:block rounded-md' />
+                {/* <Image width={80} alt='hemlock' className='hidden sm:block rounded-md' /> */}
               </div>
             </Link>
           </li>
@@ -72,7 +72,7 @@ function Navigation() {
             <Link href="/portfolio" onClick={handleChange}>
               <div className='li-container'>
                 <h3>Portfolio</h3>
-                <Image alt='project photo' className='hidden sm:block' />
+                {/* <Image alt='project photo' className='hidden sm:block' /> */}
               </div>
             </Link>
           </li>
@@ -82,7 +82,7 @@ function Navigation() {
             <Link href="/blog" onClick={handleChange}>
               <div className='li-container'>
                 <h3>Blog</h3>
-                <Image alt='blog photo' className='hidden sm:block' />
+                {/* <Image alt='blog photo' className='hidden sm:block' /> */}
               </div>
             </Link>
           </li>

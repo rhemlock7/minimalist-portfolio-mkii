@@ -11,7 +11,6 @@ import './project.styles.scss';
 export default function BlogArticle() {
     // Id of the article that was clicked
     const { id } = useParams()
-    console.log(id)
 
     const { loading, error, data } = useFetch(`https://portfolio-strapi-backend-6r1k.onrender.com/api/projects/${id}?populate=*`)
 
@@ -71,6 +70,8 @@ export default function BlogArticle() {
 
                         {/* Body text container */}
                         <div id='project-container'>
+                            <h2>Deployed App</h2>
+                            <a className='underline decoration-solid' href={projectData.deployedLink} target='_blank' rel='noreferrer' >{projectData.deployedLink}</a>
                             <ReactMarkdown className='w-10/12'>{projectData.body}</ReactMarkdown>
                         </div>
                     </div>

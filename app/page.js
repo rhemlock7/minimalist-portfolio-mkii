@@ -22,8 +22,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className='flex flex-col-reverse py-8 pb-14 lg:flex-row lg:items-start lg:pb-20 2xl:pb-28 2xl:pt-20 '>
-        {/* border-b-2 -> when needed */}
+      <section className='flex flex-col-reverse border-b-2 py-8 pb-14 lg:flex-row lg:items-start lg:pb-20 2xl:pb-28 2xl:pt-20 '>
 
         {/* Experience Div */}
         <div className='my-3 mt-10 lg:w-1/2 lg:m-0'>
@@ -52,13 +51,19 @@ export default function Home() {
 
       {/* Projects */}
       <section className='py-6'>
-        <h2>Featured Projects</h2>
+      <div className="flex justify-between items-center">
+          <h2>Featured Projects</h2>
+          <div className='flex'>
+            <Link className='text-lg' href='/portfolio'>View All</Link>
+            <Image className='w-5 mt-1 ml-2 fill-gray-500' src={arrowImage} />
+          </div>
+        </div>
 
         <FeaturedProjects />
       </section>
 
       {/* Blog Section -> Recent Articles */}
-      <section className='border-t-2 py-14'>
+      <section className='border-t-2 py-16 lg:py-24'>
         {/* Title */}
         <div className="flex justify-between items-center">
           <h2>Recent Articles</h2>
